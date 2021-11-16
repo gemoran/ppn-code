@@ -211,7 +211,7 @@ x_train[:, 2] = 5 * (z_train[:, 0]).pow(2)
 x_train[:, 3] = 4 * z_train[:, 1]
 x_train[:, 4] = 3 * z_train[:, 1]
 x_train[:, 5] = 2 * torch.sin(np.pi * z_train[:, 1] / 2)
-#x_train[:, 6] = 1 * z_train[:, 0] * z_train[:, 1]
+x_train[:, 6] = 1 * z_train[:, 0] * z_train[:, 1]
 
 x_train = x_train + (sigma_true) * torch.randn(N, input_dim)
 
@@ -224,7 +224,7 @@ x_test[:, 2] = 5 * (z_test[:, 0]).pow(2)
 x_test[:, 3] = 4 * z_test[:, 1]
 x_test[:, 4] = 3 * z_test[:, 1]
 x_test[:, 5] = 2 * torch.sin(np.pi * z_test[:, 1] / 2)
-#x_test[:, 6] = 1 * z_test[:, 0] * z_test[:, 1]
+x_test[:, 6] = 1 * z_test[:, 0] * z_test[:, 1]
 
 x_test = x_test + (sigma_true) * torch.randn(N, input_dim)
 
@@ -238,7 +238,7 @@ x_val[:, 2] = 5 * (z_val[:, 0]).pow(2)
 x_val[:, 3] = 4 * z_val[:, 1]
 x_val[:, 4] = 3 * z_val[:, 1]
 x_val[:, 5] = 2 * torch.sin(np.pi * z_val[:, 1] / 2)
-#x_val[:, 6] = 1 * z_val[:, 0] * z_val[:, 1]
+x_val[:, 6] = 1 * z_val[:, 0] * z_val[:, 1]
 
 x_val = x_val + (sigma_true) * torch.randn(N, input_dim)
 
