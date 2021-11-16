@@ -550,16 +550,8 @@ __pycache__
 # a reftex file
 *.rel
 
+# pycharm
 
-# data directories
-src/BSDS300/dat
-src/BSDS300/emayhem/dat
-src/BSDS300/emayhem/out
-src/BSDS300/emayhem_small/dat
-src/BSDS300/emayhem_small/out
-src/BSDS300/jags/dat
-src/BSDS300/jags/out
-src/BSDS300/results
-
-
+.idea/
+*.npz
 
